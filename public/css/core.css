@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+
+/*
+colors
+------
+#4285f4
+*/
+
+body {
+  font-family: "Quicksand", Helvetica, sans-serif;
+}
+
+input {
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.3s;
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+}
+
+#db-login-section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #d9e6fc;
+}
+
+#db-login-section .form-wrapper {
+  width: 450px;
+  max-width: 100%;
+  box-shadow: rgba( 0, 0, 0, 0.5 );
+}
+
+#db-login-section h2 {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background-color: #2e5daa;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#db-login-form {
+  padding: 20px;
+  text-align: center;
+  background-color: rgba( 255, 255, 255, 0.5 );
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#db-login-form input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#db-login-form input[type=button] {
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  min-width: 100px;
+  color: white;
+  background-color: #2e5daa;
+}
+
+#db-login-form input[type=button]:hover {
+  background-color: #274f92;
+}
+
+#db-login-form input[type=button]:disabled,
+#db-login-form input[type=button]:disabled:hover {
+  cursor: default;
+  color: #AAA;
+  background-color: #DDD;
+}
+
+#db-login-form input + input {
+  margin-top: 10px;
+}
+
+#db-login-form input:focus {
+  outline: none;
+  color: white;
+  background-color: #2e5daa;
+}
