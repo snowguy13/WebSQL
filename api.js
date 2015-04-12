@@ -35,4 +35,24 @@ app.delete("/api/session", function( req, res ) {
   req.session.destroy();
 });
 
-// 
+// Attempts to log in to a database
+app.put("/api/connection", function( req, res ) {
+  var body = req.body,
+      options;
+  
+  options = {
+    host:     body.host,
+    database: body.database,
+    username: body.username,
+    password: body.password,
+    port:     body.port
+  };
+  console.log( options );
+  CM.connect( req.session.token, options, function( err ) {
+    if( err ) {
+      console.log( err );
+    }
+
+    res.sendStatus( 200 );
+  });
+});

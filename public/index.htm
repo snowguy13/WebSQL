@@ -3,12 +3,16 @@
 <head>
   <title>MySQL Explorer</title>
   <link rel="stylesheet" href="css/core.css" />
+  <script src="jspm_packages/system.js"></script>
+  <script src="config.js"></script>
+  <script type="text/javascript">System.import("main");</script>
 </head>
 <body>
   <section id="db-login-section"><div class="form-wrapper">
     <h2>Log Into a Database</h2>
     <form id="db-login-form" name="db-login">
-      <input name="host"     type="text"     placeholder="Host URL" autofocus />
+      <div class="loading-cover"></div>
+      <input name="host"     type="url"      placeholder="Host URL" autofocus />
       <input name="database" type="text"     placeholder="Database name" />
       <input name="username" type="text"     placeholder="Username" />
       <input name="password" type="password" placeholder="Password" />

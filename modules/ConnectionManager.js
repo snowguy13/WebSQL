@@ -1,7 +1,7 @@
 var mysql       = require("mysql"),
     connections = {};
 
-return {
+module.exports = {
   connect: function( token, options, callback ) {
     var connection = connections[ token ];
     
