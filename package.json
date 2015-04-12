@@ -1,0 +1,25 @@
+{
+  "name": "WebSQL",
+  "version": "1.0.0",
+  "description": "Allows exploration of SQL databases in a web view.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snowguy13/WebSQL.git"
+  },
+  "keywords": [
+    "mysql",
+    "web",
+    "sql",
+    "database"
+  ],
+  "author": "Tom Scallon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowguy13/WebSQL/issues"
+  },
+  "homepage": "https://github.com/snowguy13/WebSQL"
+}
